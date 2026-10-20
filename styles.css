@@ -57,7 +57,7 @@ body.reduce-motion *,body.reduce-motion *::before,body.reduce-motion *::after{an
 .about-intro h2{font-size:32px;line-height:1.15;letter-spacing:-.035em}
 .about-intro-copy{max-width:760px;font-size:clamp(18px,1.65vw,23px);line-height:1.5}
 .about-intro-copy p+p{margin-top:8px}
-.about-intro-duck{display:block;width:96px;height:96px;justify-self:end;shape-rendering:crispEdges;image-rendering:pixelated}
+.about-intro-duck{display:block;width:96px;height:96px;justify-self:end;shape-rendering:crispEdges;image-rendering:pixelated;transform:scaleX(-1)}
 @media(min-width:1600px){.workshop-hero{padding-inline:max(5%,calc((100vw - 1600px)/2))}.workshop-hero h1{font-size:min(11.9vw,211px)}}
 @media(min-width:701px) and (max-width:1050px){
  .workshop-hero{padding-top:22px}.workshop-hero h1{padding-bottom:24px}
