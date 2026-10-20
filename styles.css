@@ -194,3 +194,21 @@ body.reduce-motion *,body.reduce-motion *::before,body.reduce-motion *::after{an
 @media(min-width:1051px){
  .workshop-intro{margin-left:clamp(48px,7vw,100px);margin-bottom:56px}
 }
+
+/* Contact links */
+.contact-links{display:flex;align-items:center;flex-wrap:wrap;gap:18px 32px;margin:24px 0 16px}
+.contact-link{display:inline-flex;align-items:center;gap:18px;min-height:48px;border-bottom:2px solid var(--ink);font:400 clamp(24px,3vw,32px)/1.5 DM,Arial,sans-serif}
+.contact-link:hover{border-bottom-style:dashed}
+.resume-link-group{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+.resume-note{font-size:14px;line-height:1.4;white-space:nowrap}
+
+/* Keep the Octaby title with its description. */
+.octaby-copy .section-heading{margin:0 0 24px}
+.octaby-copy{padding-bottom:56px}
+@media(max-width:700px){.octaby-copy{padding-bottom:0}.octaby-copy .section-heading{margin-bottom:20px}}
+
+/* The character shares the intro space with the project link. */
+.workshop-intro{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px}
+.hero-character{display:block;width:clamp(150px,17vw,230px);height:auto;object-fit:contain}
+@media(max-width:700px){.workshop-intro{flex-direction:row;gap:24px}.hero-character{width:120px;flex-shrink:0}}
+@media(max-width:370px){.workshop-intro{gap:18px}.hero-character{width:104px}}
