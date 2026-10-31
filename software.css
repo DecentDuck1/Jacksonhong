@@ -1,0 +1,90 @@
+/* Keep the software page on the portfolio's shared type, colors, and spacing. */
+.software-hero .workshop-stage {
+  grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr);
+  margin-top: 36px;
+  padding-bottom: 14px;
+}
+
+.software-preview-stack {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-items: start;
+  max-width: 760px;
+  width: 100%;
+  justify-self: center;
+}
+
+.software-hero-shot {
+  grid-area: 1 / 1 / 2 / 10;
+  display: block;
+  min-width: 0;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  box-shadow: 5px 5px 0 #25261d26;
+}
+
+.software-hero-shot + .software-hero-shot {
+  grid-column: 5 / 13;
+  margin-top: 30%;
+}
+
+.software-hero-shot img { aspect-ratio: 16 / 9; object-fit: contain; }
+.software-hero-shot > figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 9px 12px;
+  border-top: 1px solid var(--ink);
+  font-size: 9px;
+}
+
+.software-projects, .software-project { scroll-margin-top: 72px; }
+.software-project { border-top: 1px solid var(--line); }
+.software-project-chefle { background: #f1ecf3; }
+.software-project-layout {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: clamp(32px, 6vw, 86px);
+}
+.software-project-copy h2 {
+  font-size: clamp(32px, 3.2vw, 47px);
+  line-height: 1.14;
+  margin-bottom: 24px;
+}
+.software-project-copy p { max-width: 460px; font-size: 16px; }
+.software-project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  min-height: 48px;
+  margin-top: 22px;
+  border-bottom: 2px solid var(--ink);
+  font-size: 18px;
+  font-weight: 700;
+}
+.software-project-link:hover { border-bottom-style: dashed; }
+.software-project-image .image-link { border: 1px solid var(--line); }
+.software-project-image img { aspect-ratio: 16 / 9; object-fit: contain; }
+.software-project-image figcaption {
+  padding: 11px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+@media (min-width: 701px) and (max-width: 1050px) {
+  .software-hero .workshop-intro { margin: 0; }
+  .software-hero .hero-character { width: 160px; }
+  .software-project-layout { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 32px; }
+}
+
+@media (max-width: 700px) {
+  .software-hero h1 { font-size: 16vw; }
+  .software-hero .workshop-stage { margin-top: 28px; padding-bottom: 0; gap: 30px; }
+  .software-preview-stack { max-width: 600px; }
+  .software-hero-shot > figcaption { padding: 7px 9px; font-size: 7px; }
+  .software-project-layout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .software-project-copy h2 { margin-bottom: 20px; }
+  .software-project-copy p { max-width: none; }
+  .software-project-link { margin-top: 18px; }
+}

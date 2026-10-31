@@ -10,7 +10,7 @@ This is a static HTML, CSS, and JavaScript site with no build step.
 python3 -m http.server 4173
 ```
 
-Open http://localhost:4173. Edit `index.html` for project content, `styles.css` for layout, and `app.js` for gallery behavior. Images and licensed fonts are in `assets/`.
+Open http://localhost:4173. Edit `index.html` for hardware projects and `software.html` for software projects. Both pages share `styles.css` and `app.js`; `software.css` contains the software page’s layout. The Software link in the main navigation connects the pages. Images and licensed fonts are in `assets/`.
 
 ## Hosting
 
