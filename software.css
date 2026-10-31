@@ -1,4 +1,10 @@
 /* Keep the software page on the portfolio's shared type, colors, and spacing. */
+.software-subtitle {
+  margin-top: 12px;
+  font-size: clamp(16px, 1.65vw, 22px);
+  line-height: 1.45;
+}
+
 .software-hero .workshop-stage {
   grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr);
   margin-top: 36px;
